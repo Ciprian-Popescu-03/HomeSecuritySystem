@@ -1,44 +1,56 @@
-# HomeSecuritySystem
+# Home Security System 🏡
 
-## Overview
+Welcome to the **Home Security System**, a project implemented on the **Basys 3 FPGA board**.  
+This system simulates a simple yet effective home security setup with configurable modes, a security code, and sensor simulation using switches.
 
-This project implements a **Home Security System** on the **Basys 3 FPGA board**. It features a simple security system with configurable modes, a security code, and simulated sensors. The system uses switches to simulate the sensors (motion, window, and door sensors). 
+---
 
-For detailed information, please refer to the [Documentation](Documentation%20Project.pdf).
+# Overview 📖
 
-## Features
+Upon starting the system, users are greeted with a **15-second countdown**, during which they must enter a **4-digit security code**.  
+Once authenticated, users can select the desired security mode and simulate sensor states using the board's switches.
 
-- **Modes**: 
+📄 **More detailed explanations and technical information can be found in the project documentation.**
+
+---
+
+# Features 🪄
+
+- **Modes**:
   - **Inactive**: All sensors are ignored.
   - **At Home**: Only door and window sensors are monitored.
   - **Off**: All sensors are monitored.
 
-- **Security Code**: A 4-digit code must be entered to change the mode.
-  
-- **Timer**: A 15-second countdown is active at system startup, after which the code can no longer be entered unless the system is reset.
+- **Security Code**: A 4-digit code must be entered during the countdown to unlock mode selection.
 
-- **Sensor Simulation**: Motion, window, and door sensors are simulated using switches.
+- **Timer**: A 15-second countdown starts when the system powers on. After expiration, code entry is disabled unless reset.
 
-## Components
-
-- **Basys 3 FPGA Board**
-- **VHDL Code** for system logic
-- **Seven-Segment Display** for showing the security code and countdown timer
-- **Clock Divider** and **Reverse Counter** for timing and delays
-
-## Instructions
-
-1. **Start the System**: The 15-second countdown will begin upon startup.
-2. **Enter the Security Code**: Enter the 4-digit code during the countdown.
-3. **Select Mode**: After entering the code, choose one of the available modes.
-4. **Simulate Sensors**: Use switches to simulate different sensor states.
-5. **Reset System**: If the countdown expires without entering the code, reset the system.
-
-## Future Development
-
-The system could be enhanced by integrating real sensors, adding alarm features, or linking it to a mobile app for remote control.
+- **Sensor Simulation**: Motion, window, and door sensors are simulated using board switches.
 
 ---
 
-For further technical details, refer to the [Documentation](Documentation%20Project.pdf).
+# Components 🛠
 
+- **Basys 3 FPGA Board**
+- **VHDL Code** for the system logic
+- **Seven-Segment Display** for showing the security code and countdown timer
+- **Clock Divider** and **Reverse Counter** for timing and delays
+
+---
+
+# Instructions 🧭
+
+1. **Start the System**: The 15-second countdown will begin upon startup.
+2. **Enter the Security Code**: Input the 4-digit security code before the countdown expires.
+3. **Select Mode**: After successful code entry, choose between Inactive, At Home, or Off modes.
+4. **Simulate Sensors**: Use the board's switches to simulate motion, window, and door sensors.
+5. **Reset System**: If the countdown expires, reset the system to retry.
+
+---
+
+# Future Development 🚀
+
+Potential enhancements include:
+- Integrating real physical sensors
+- Adding alarm and notification features
+- Developing a mobile app for remote control and monitoring
