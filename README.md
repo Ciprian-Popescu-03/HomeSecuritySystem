@@ -10,7 +10,7 @@ This system simulates a simple yet effective home security setup with configurab
 Upon starting the system, users are greeted with a **15-second countdown**, during which they must enter a **4-digit security code**.  
 Once authenticated, users can select the desired security mode and simulate sensor states using the board's switches.
 
-📄 **More detailed explanations and technical information can be found in the project documentation.**
+📄 **More detailed explanations and technical information can be found in the project [documentation](Documentation%20Project.pdf).**
 
 ---
 
